@@ -1,6 +1,53 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+
+/* Custom CSS */
+
+/* Skills Inner Section CSS */
+
+.skills-wrapper {
+	text-align: center;
+}
+
+.skills {
+	max-width: 68.75rem;
+	margin: auto;
+	text-align: center;
+	margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+	text-align: left;
+	margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+	padding: 1.25rem;
+  }
+  
+  .icon {
+	width: 8.875rem;
+	height: 8.25rem;
+  }
+
+  .icon-card {
+	background-color: #fff;
+	border-radius: 11px;
+	box-shadow: 0 3px 10px #4fb2aa;
+	padding: 20px;
+	margin: 10px;
+	transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+
+  .icon-card:hover {
+	box-shadow: 0 3px 10px #1be7d6;
+  }
+
+
+
+
+
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -1140,12 +1187,16 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
+		/* CHANGE BACKGROUND HERE */
 		#bg:after {
 			-moz-transform: scale(1.125);
 			-webkit-transform: scale(1.125);
