@@ -398,4 +398,39 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
+
+		// Main Sections: Two.
+
+			// Lightbox gallery.
+			$window.on('load', function() {
+
+				$('#two').poptrox({
+					caption: function($a) { return $a.next('h3').text(); },
+					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: '.work-item a.project-image',
+					usePopupCaption: true,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: true,
+					usePopupNav: true,
+					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				});
+
+			});
+
+			// Touch?
+		if (browser.mobile) {
+
+			// Turn on touch mode.
+				$body.addClass('is-touch');
+
+			// Height fix (mostly for iOS).
+				window.setTimeout(function() {
+					$window.scrollTop($window.scrollTop() + 1);
+				}, 0);
+
+		}
+
 })(jQuery);
