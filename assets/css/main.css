@@ -4,6 +4,81 @@
 
 /* Custom CSS */
 
+/* text tag decorations */
+
+.content h3 {
+	padding-top: 25px;
+	text-align: center;
+}
+
+.content a {
+	border-bottom: none;
+	text-decoration: none;
+	color: #4fb2aa;
+}
+  
+.content a:hover {
+	border-bottom: none;
+	text-decoration: none;
+	color: #1be7d6;
+}
+
+.content p {
+	text-align: center;
+
+}
+  
+/* row and column decoration */
+.row {
+	display: flex;
+}
+  
+.row > .column {
+	padding: 6px;
+}
+
+.column {
+	width: 100%;
+}
+
+  
+/* content decoration */
+.content {
+	background-color: transparent;
+	padding: 10px;
+}
+
+.content img {
+	border-radius: 11px;
+	box-shadow: 0 3px 10px #4fb2aa;
+	transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.content img:hover {
+	box-shadow: 0 3px 10px #1be7d6;
+}
+  
+/* window size 850 width set */
+@media screen and (max-width: 600px) {
+	.row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.column {
+		width: auto;
+	}
+	  
+}
+
+/* window size 400 width set */
+@media screen and (max-width: 400px) {
+	.column {
+		width: auto;
+	}
+	  
+}
+
 /* Skills Inner Section CSS */
 
 .skills-wrapper {
