@@ -75,7 +75,7 @@
 		-webkit-transition: opacity 0.2s ease-in-out;
 		-ms-transition: opacity 0.2s ease-in-out;
 		transition: opacity 0.2s ease-in-out;
-		background: url("images/overlay.png");
+		background: url("images/overlay.webp");
 		border-radius: 11px;
 		content: '';
 		display: block;
@@ -121,7 +121,7 @@
 		}
 
 		.project-image.thumb:hover:before {
-			background: url("images/overlay2.png"), url("images/overlay2.png");
+			background: url("images/overlay2.webp"), url("images/overlay2.webp");
 			opacity: 1.0;
 		}
 
@@ -938,7 +938,7 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
+			background-image: url("../../images/overlay.webp");
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
@@ -1440,7 +1440,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.webp");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -1460,7 +1460,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/quarter.jpg");
+			background-image: url("../../images/quarter.webp");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
