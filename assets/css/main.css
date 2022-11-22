@@ -23,6 +23,22 @@
 
 /* Work Item */
 
+#work {
+}
+
+#work .gitlink {
+	color: #01cece;
+	text-decoration: none;
+	border-bottom: none;
+	transition: color 0.3s ease-in-out
+}
+
+#work .gitlink:hover {
+	color: #00ffff;
+}
+
+
+
 .work-item {
 	margin: 0 0 2em 0;
 }
@@ -49,7 +65,7 @@
 	border: 0;
 	display: inline-block;
 	position: relative;
-	box-shadow: 0 3px 10px #4fb2aa;
+	box-shadow: 0 3px 10px #01cece;
 	transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 	
 }
@@ -69,7 +85,7 @@
 		position: absolute;
 		top: 0;
 		width: 100%;
-		box-shadow: 0 3px 10px #1be7d6;
+		box-shadow: 0 3px 10px #01cece;
 	}
 
 	.project-image.thumb {
@@ -83,7 +99,7 @@
 			transition: opacity 0.2s ease-in-out;
 			border-radius: 11px;
 			border: solid 3px rgba(255, 255, 255, 0.5);
-			color: #fff;
+			color: #ffffff;
 			content: 'View';
 			display: inline-block;
 			font-size: 0.8em;
@@ -167,19 +183,20 @@
 .content a {
 	border-bottom: none;
 	text-decoration: none;
-	color: #4fb2aa;
+	color: #01cece;
 }
   
 .content a:hover {
 	border-bottom: none;
 	text-decoration: none;
-	color: #1be7d6;
+	color: #00ffff;
 }
 
 .content p {
 	text-align: center;
 	padding-top: 10px;
-	padding-bottom: 10px
+	padding-bottom: 10px;
+	color: #fff;
 }
   
 /* row and column decoration */
@@ -233,6 +250,9 @@
 	text-align: center;
 }
 
+.skills-wrapper p {
+}
+
 .skills {
 	max-width: 68.75rem;
 	margin: auto;
@@ -257,14 +277,14 @@
   .icon-card {
 	background-color: #fff;
 	border-radius: 11px;
-	box-shadow: 0 3px 10px #4fb2aa;
+	box-shadow: 0 3px 10px #01cece;
 	padding: 20px;
 	margin: 10px;
 	transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
 
   .icon-card:hover {
-	box-shadow: 0 3px 10px #1be7d6;
+	box-shadow: 0 3px 10px #00ffff;
   }
 
 
@@ -459,7 +479,7 @@ input, select, textarea {
 		}
 		/* CHANGE THE UNDERLINE BELOW H2 OF SECTION COLOR HERE */
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
+			border-bottom: solid 1px #01cece;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -472,12 +492,14 @@ input, select, textarea {
 		font-size: 2.25rem;
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
+		color: #00ffff;
 	}
 
 	h2 {
 		font-size: 1.5rem;
 		line-height: 1.4;
 		letter-spacing: 0.5rem;
+		color: #00ffff;
 	}
 
 	h3 {
@@ -645,7 +667,7 @@ input, select, textarea {
 		}
 		/* CHANGE CONTACT FORM TEXTBOX LABELS HERE */
 	label {
-		color: #ffffff;
+		color: #00ffff;
 		display: block;
 		font-size: 0.8rem;
 		font-weight: 300;
@@ -671,7 +693,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
-		border: solid 1px #ffffff;
+		border: solid 1px #01cece;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -696,8 +718,8 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			border-color: #01cece;
+			box-shadow: 0 0 0 1px #00ffff;
 		}
 
 	select {
@@ -755,10 +777,10 @@ input, select, textarea {
 			-webkit-user-select: none;
 			-ms-user-select: none;
 			user-select: none;
-			color: #ffffff;
+			color: #00ffff;
 			cursor: pointer;
 			display: inline-block;
-			font-size: 0.8rem;
+			font-size: 0.6rem;
 			font-weight: 300;
 			margin: 0 0 0.5rem 0;
 			padding-left: 2.65rem;
@@ -787,7 +809,7 @@ input, select, textarea {
 				-ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				border-radius: 4px;
-				border: solid 1px #ffffff;
+				border: solid 1px #01cece;
 				content: '';
 				display: inline-block;
 				height: 1.65rem;
@@ -801,8 +823,8 @@ input, select, textarea {
 			/* CHANGE COLOR FOR RADIO CHECKBOX WHEN SELECTED HERE */
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #ffffff !important;
-			border-color: #ffffff !important;
+			background: #00ffff !important;
+			border-color: #01cece !important;
 			color: #1b1f22;
 			content: '\f00c';
 		}
@@ -810,8 +832,8 @@ input, select, textarea {
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
 			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			border-color: #00ffff;
+			box-shadow: 0 0 0 1px #00ffff;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -1181,20 +1203,25 @@ input, select, textarea {
 			/* CHANGE SOCIAL ICON BORDER COLORS HERE */
 			ul.icons li a {
 				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
+				box-shadow: inset 0 0 0 1px #01cece;
 				display: inline-block;
 				height: 2.25rem;
 				line-height: 2.25rem;
 				text-align: center;
 				width: 2.25rem;
+				color: #01cece;
 			}
 				/* CHANGE SOCIAL ICON BACKGROUND ON HOVER COLOR HERE */
 				ul.icons li a:hover {
 					background-color: rgba(255, 255, 255, 0.075);
+					box-shadow: inset 0 0 0 1px #00ffff;
+					color: #00ffff;
 				}
 
 				ul.icons li a:active {
 					background-color: rgba(255, 255, 255, 0.175);
+					box-shadow: inset 0 0 0 1px #00ffff;
+					color: #00ffff;
 				}
 
 /* Table */
@@ -1283,8 +1310,8 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 1px #ffffff;
-		color: #ffffff !important;
+		box-shadow: inset 0 0 0 1px #01cece;
+		color: #00ffff !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8rem;
@@ -1306,6 +1333,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			background-color: rgba(255, 255, 255, 0.075);
+			box-shadow: inset 0 0 0 1px #00ffff;
 		}
 
 		input[type="submit"]:active,
@@ -1347,9 +1375,13 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
+			background-color: #01cece;
 			color: #1b1f22 !important;
 			font-weight: 600;
+		}
+
+		input[type="submit"].primary:hover {
+			background-color: #00ffff;
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -1428,7 +1460,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/palm.jpg");
+			background-image: url("../../images/quarter.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1549,7 +1581,7 @@ input, select, textarea {
 				left: calc(50% - 1px);
 				width: 1px;
 				height: calc(3.5rem + 1px);
-				background: #ffffff;
+				background: #fff;
 			}
 
 		#header > :first-child {
@@ -1564,8 +1596,9 @@ input, select, textarea {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			border: solid 1px #fff;
 			border-radius: 100%;
+			color: #00ffff;
 		}
 
 			#header .logo .icon:before {
@@ -1574,7 +1607,7 @@ input, select, textarea {
 		/* CHANGE HEADER HORIZONTAL LINE COLORS HERE */
 		#header .content {
 			border-style: solid;
-			border-color: #ffffff;
+			border-color: #fff;
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
@@ -1613,13 +1646,13 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
+			border: solid 1px #fff;
 			border-radius: 4px;
 		}
 			/* CHANGE SECTION LINK BORDER LEFT COLOR HERE */
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border-left: solid 1px #fff;
 			}
 
 				#header nav ul li:first-child {
@@ -1635,11 +1668,13 @@ input, select, textarea {
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
+					font-weight: bold;
 					border-bottom: 0;
+					color: #00ffff;
 				}
 					/* CHANGE HEADER LINK ON HOVER AND ACTIVE COLORS HERE */
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: rgba(0, 255, 255, 0.095);
 					}
 
 					#header nav ul li a:active {
@@ -1654,7 +1689,7 @@ input, select, textarea {
 			left: calc(50% - 1px);
 			width: 1px;
 			height: 100%;
-			background: #ffffff;
+			background: #fff;
 		}
 
 		#header nav.use-middle ul li.is-middle {
@@ -1751,7 +1786,7 @@ input, select, textarea {
 
 					#header nav ul li {
 						border-left: 0;
-						border-top: solid 1px #ffffff;
+						border-top: solid 1px #fff;
 					}
 
 						#header nav ul li:first-child {
@@ -1908,10 +1943,12 @@ input, select, textarea {
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;
-			font-size: 0.6rem;
-			opacity: 0.75;
+			font-size: 0.7rem;
+			opacity: 0.95;
 			margin-bottom: 0;
 			text-transform: uppercase;
+			font-weight: bold;
+			color: #00ffff;
 		}
 
 		body.is-article-visible #footer {
