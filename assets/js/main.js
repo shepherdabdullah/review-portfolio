@@ -399,26 +399,26 @@
 					});
 
 
-		// Main Sections: Two.
+		// Main Sections: Two. DISABLED IMAGE LIGHTBOX GALLERY
 
 			// Lightbox gallery.
-			$window.on('load', function() {
+			//$window.on('load', function() {
 
-				$('#two').poptrox({
-					caption: function($a) { return $a.next('h3').text(); },
-					overlayColor: '#2c2c2c',
-					overlayOpacity: 0.85,
-					popupCloserText: '',
-					popupLoaderText: '',
-					selector: '.work-item a.project-image',
-					usePopupCaption: true,
-					usePopupDefaultStyling: false,
-					usePopupEasyClose: true,
-					usePopupNav: true,
-					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-				});
+				//$('#two').poptrox({
+					//caption: function($a) { return $a.next('h3').text(); },
+					//overlayColor: '#2c2c2c',
+					//overlayOpacity: 0.85,
+					//popupCloserText: '',
+					//popupLoaderText: '',
+					//selector: '.work-item a.project-image',
+					//usePopupCaption: true,
+					//usePopupDefaultStyling: false,
+					//usePopupEasyClose: true,
+					//usePopupNav: true,
+					//windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				//});
 
-			});
+			//});
 
 			// Touch?
 		if (browser.mobile) {

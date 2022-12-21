@@ -938,7 +938,7 @@ input, select, textarea {
 		.image:before {
 			pointer-events: none;
 			background-image: url("../../images/overlay.webp");
-			background-color: rgba(19, 21, 25, 0.5);
+			background-color: rgba(27, 31, 34,);
 			border-radius: 4px;
 			content: '';
 			display: block;
@@ -1429,7 +1429,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 		}
-		/*CHANGE BACKGROUND OVERLAY COLOR HERE*/
+		/*CHANGE BACKGROUND OVERLAY COLOR HERE NOTE - I ORIGINALLY HAD OPACITY SET TO 0.5 IN BOTH*/
 		#bg:before {
 			-moz-transition: background-color 2.5s ease-in-out;
 			-webkit-transition: background-color 2.5s ease-in-out;
@@ -1439,7 +1439,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.webp");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.65), rgba(19, 21, 25, 0.5)), url("../../images/overlay.webp");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -1555,10 +1555,12 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		/*CHANGES VIGNETTE COLOR START NOTE - ORIGINAL VALUE WAS 0.25 IN ALL 4 INSTANCES*/
+		background-image: -moz-radial-gradient(rgba(197, 54, 54, 0.30) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.30) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.30) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: radial-gradient(rgba(0, 0, 0, 0.30) 25%, rgba(0, 0, 0, 0) 55%);
+		/*CHANGES VIGNETTE COLOR END*/
 		max-width: 100%;
 		text-align: center;
 	}
